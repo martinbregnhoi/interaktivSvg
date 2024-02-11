@@ -22,6 +22,7 @@ async function runProgram() {
     //-----------------------------------------------------------------------
 document.querySelector("#poi").addEventListener("click", clicked);
 
+};
     //function clicked
     //--------------------------------------------------------------------
 function clicked(){
@@ -59,4 +60,4 @@ color = selected.getAttribute("fill");
     //--------------------------------------------------------------------------
 };
 
-};
+
