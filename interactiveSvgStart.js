@@ -3,16 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 async function runProgram() {
-    let selected;
-    let selectedID;
-    let color;
    
 
     // 1. Load svg map
     //------------------------------------------------------------------------------------	
- const svgMap = await fetch("københavn-link.svg");
- let map = await svgMap.text();
- document.querySelector("#map").innerHTML = map;
+
 
     // 2. find infobokse og skjul dem
     //------------------------------------------------------------------------------
@@ -20,7 +15,7 @@ async function runProgram() {
 
     // 3. Skift farve ved klik, og vis tekst
     //-----------------------------------------------------------------------
-document.querySelector("#poi").addEventListener("click", clicked);
+
 
     //function clicked
     //--------------------------------------------------------------------
@@ -28,18 +23,17 @@ function clicked(){
     
     // a. find det klikkede element
     //----------------------------------------------
- selected = event.target;
+
 
     
     // b. find det klikkede elementets ID
     //---------------------------------------------
-selectedID = selected.id;
+
 
     
     // c. find  det klikkede elements fillfarve
     //---------------------------------------------
-color = selected.getAttribute("fill");
-   console.log(color);
+
     // d. vis infobokse
     //--------------------------------------------
 
