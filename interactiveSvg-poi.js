@@ -84,7 +84,11 @@ active = selected;
         selected.setAttribute("fill","#ED0C0C");
          document.querySelector("#infotekst h2").textContent = "";
     }
-
+//luk tekstboks ved click
+ /*document.querySelector("#infotekst").addEventListener("click",()=>{
+  document.querySelector("#infotekst").style.display = "none";
+ })*/
 };
+
 
 
