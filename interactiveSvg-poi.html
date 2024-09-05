@@ -7,21 +7,33 @@
   <script type="text/javascript" src="interactiveSvg-poi.js"></script>
 
   <style>
+    #map{
+      max-width:100%;
+    }
     main{
       display: grid;
+      max-height: 90vh;
     }
-    #infotekst, #map{
+   /* #infotekst, #map{
       grid-area: 1 / 1;
-    }
+    }*/
     #infotekst{
-     align-self: start;
-     justify-self: end;
-     background-color: #fff;
-     min-width:40vw;
+      position:absolute;
+    /*align-self: center;
+     justify-self:center;*/
+      background-color: #fff;
     padding: 10px 20px;
      text-align: center;
+     width:300px;
+     height:200px;
+     display:none;
+    
     }
+  #infotekst h2{
   
+    display:inline-block;
+   
+  }
   </style>
 </head>
 

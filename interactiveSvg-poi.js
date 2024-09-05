@@ -7,7 +7,7 @@ let selectedID;
 let color;
 let active;
 let steder;
-
+let pos;
 async function runProgram() {
    
     // Load json
@@ -35,10 +35,16 @@ document.querySelector("#map").innerHTML = cph;
     //--------------------------------------------------------------------
 function clicked(obj){
     
+// get mouse position
+
     // a. find det klikkede element
     //----------------------------------------------
     selected = obj.target;
-//console.log({selected});
+    pos = selected.getBoundingClientRect();
+document.querySelector("#infotekst").style.top = (pos.top+20)+"px";
+document.querySelector("#infotekst").style.left = (pos.left+20)+"px";
+document.querySelector("#infotekst").style.display = "block";
+
 
     
     // b. find det klikkede elementets ID
@@ -57,8 +63,9 @@ color = selected.getAttribute("fill");
 steder.forEach(sted => {
     if (sted.poi == selectedID ){
         //console.log(sted.tekst);
-        document.querySelector("#infotekst h2").textContent = sted.tekst;    }
-    
+        document.querySelector("#infotekst h2").textContent = sted.tekst;  
+      }
+    console.log("top", pos.top);
 });
   
 
@@ -82,7 +89,7 @@ active = selected;
     //--------------------------------------------------------------------------
     else{
         selected.setAttribute("fill","#ED0C0C");
-         document.querySelector("#infotekst h2").textContent = "";
+         document.querySelector("#infotekst").style.display = "none";
     }
 
 };
