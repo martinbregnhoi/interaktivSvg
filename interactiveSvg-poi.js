@@ -41,8 +41,9 @@ function clicked(obj){
     //----------------------------------------------
     selected = obj.target;
     pos = selected.getBoundingClientRect();
-document.querySelector("#infotekst").style.top = (pos.top+20)+"px";
-document.querySelector("#infotekst").style.left = (pos.left+20)+"px";
+    console.log(pos);
+document.querySelector("#infotekst").style.top = (pos.bottom)+"px";
+document.querySelector("#infotekst").style.left = (pos.right)+"px";
 document.querySelector("#infotekst").style.display = "block";
 
 
