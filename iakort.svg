@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1080 1080">
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <g>
+    <g id="bgr">
+      <image width="1575" height="1209" transform="translate(-54 -16) scale(.9)" xlink:href="koebenhavn.png"/>
+    </g>
+    <g id="poi">
+      <circle id="KEA" cx="830" cy="506" r="19.5" fill="#f90808" stroke="#000" stroke-miterlimit="10"/>
+      <circle id="Holmen" cx="303.5" cy="304.5" r="17" fill="#f90808" stroke="#000" stroke-miterlimit="10"/>
+    </g>
+  </g>
+</svg>

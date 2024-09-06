@@ -54,6 +54,7 @@ color = selected.getAttribute("fill");
 
     // d. vis infobokse
     //--------------------------------------------
+
 steder.forEach(sted => {
     if (sted.poi == selectedID ){
         //console.log(sted.tekst);
