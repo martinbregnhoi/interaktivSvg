@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
     runProgram();
 });
 
-let selected;
-let selectedID;
-let color;
-let active;
-let steder;
+let selected;//det valgte punkt
+let selectedID;//det valgte punkts ID
+let color;// punktets fyldfarve
+let active;// det aktive punkt
+let steder;// json objekter
 
 async function runProgram() {
    
@@ -62,7 +62,6 @@ steder.forEach(sted => {
     
 });
   
-
     // 4. hvis der tidligere har været klikket skal det forige element skifte farve til original
     //------------------------------------------------------------------------------------
 if(active != undefined){
@@ -85,10 +84,6 @@ active = selected;
         selected.setAttribute("fill","#ED0C0C");
          document.querySelector("#infotekst h2").textContent = "";
     }
-//luk tekstboks ved click
- /*document.querySelector("#infotekst").addEventListener("click",()=>{
-  document.querySelector("#infotekst").style.display = "none";
- })*/
 };
 
 
