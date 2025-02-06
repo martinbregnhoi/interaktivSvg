@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+  <script type="text/javascript" src="interactiveSvg-poi2.js"></script>
+
+  <style>
+    #map{
+      max-width:100%;
+    }
+    main{
+      display: grid;
+      max-height: 90vh;
+    }
+    circle:hover {
+      cursor:pointer;
+    }
+   /* #infotekst, #map{
+      grid-area: 1 / 1;
+    }*/
+    #infotekst{
+      position:absolute;
+    /*align-self: center;
+     justify-self:center;*/
+      background-color: #ffffffC0;
+    padding: 10px 20px;
+     text-align: center;
+     width:300px;
+     height:200px;
+     display:none;
+    
+    }
+  #infotekst h2{
+  
+    display:inline-block;
+   
+  }
+  .vis {
+        opacity: 0;
+        transform: translateY(-10px);
+       /* animation: draw 1s 0s ease-out forwards;*/
+        animation:draw 2s ease-out forwards;
+    }
+    
+    @keyframes draw {
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+   
+    .animer-rute{
+stroke-dasharray:530;
+            stroke-dashoffset:530;
+            animation:spor 5s 0s ease both;
+            stroke:#ff0000;
+            stroke-width:4px;
+       
+    }
+      @keyframes spor{
+            to{
+                stroke-dashoffset:0;
+            }
+        }
+        @keyframes fadein{
+            to{
+                opacity: 1;
+            }
+        }
+  </style>
+</head>
+
+<body>
+  <main>
+   
+    <div id="map"></div>
+    <article id="infotekst">
+      <h2></h2>
+    </article>
+</main>
+</body>
+
+</html>

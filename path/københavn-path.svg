@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1255 824">
+  <!-- Generator: Adobe Illustrator 29.2.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 116)  -->
+  <g id="bgr">
+    <image width="1575" height="1209" transform="translate(-233 -260.5)" xlink:href="koebenhavn.png" isolation="isolate"/>
+  </g>
+  <g id="poi">
+    <circle id="KEA" cx="140.5" cy="72.5" r="14.5" fill="#ed0c0c"/>
+    <circle id="Holmen" cx="731" cy="365.5" r="14.5" fill="#ed0c0c"/>
+  </g>
+  <polyline id="rute1" points="140.5 99 162 119 151.25 140 145 158 135 187 148.5 194 140.5 210 135 222 148.5 232 173 248 178 243 197 219 219 187 230 173.5 256 188 331 216 386 211" fill="none" stroke="#000" stroke-miterlimit="10"/>
+  <polyline id="rute2" points="716.5 386 716.5 399 687 380 683 389.5 672 385 649 372 615 360 546 327 546 318 462 279 381 239 381 222" fill="none" stroke="#000" stroke-miterlimit="10"/>
+</svg>
