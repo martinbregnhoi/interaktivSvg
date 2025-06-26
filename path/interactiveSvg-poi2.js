@@ -24,7 +24,7 @@ let cph = await mySvg.text();
 
 document.querySelector("#map").innerHTML = cph;
 
-    // 3. Skift farve ved klik, og vis tekst
+    // 3. Skift farve ved klik, og vis tekst ---
     //-----------------------------------------------------------------------
     document.querySelector("#poi").addEventListener("click",(e) =>{clicked(e)})
 
